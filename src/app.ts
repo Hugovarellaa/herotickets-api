@@ -8,6 +8,11 @@ class App {
   constructor() {
     this.app = express();
     this.middlewaresInitialized();
+    this.routesInitialized();
+  }
+
+  routesInitialized() {
+    // this.app.use("/");
   }
 
   middlewaresInitialized() {
