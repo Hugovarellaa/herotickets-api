@@ -7,6 +7,12 @@ class App {
 
   constructor() {
     this.app = express();
+    this.middlewaresInitialized();
+  }
+
+  middlewaresInitialized() {
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: true }));
   }
 
   listen() {
