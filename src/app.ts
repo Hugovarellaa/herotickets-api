@@ -9,10 +9,15 @@ class App {
     this.app = express();
     this.middlewaresInitialized();
     this.routesInitialized();
+    this.interceptError();
   }
 
   routesInitialized() {
     // this.app.use("/");
+  }
+
+  interceptError() {
+    // this.app.use()
   }
 
   middlewaresInitialized() {
