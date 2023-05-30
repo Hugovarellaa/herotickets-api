@@ -1,4 +1,5 @@
 import express, { Application } from "express";
+import { connect } from "./infra/database";
 
 const PORT = 3333;
 
@@ -10,6 +11,7 @@ class App {
     this.middlewaresInitialized();
     this.routesInitialized();
     this.interceptError();
+    connect();
   }
 
   routesInitialized() {
