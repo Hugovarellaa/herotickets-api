@@ -1,3 +1,7 @@
+import { Location } from "./Location";
+import { Price } from "./Price";
+import { User } from "./User";
+
 class Event {
   constructor(
     public title: string,
