@@ -1,6 +1,6 @@
 # Aula 01
 
-Stop aula 47:35min 14-08-2023
+Stop aula 01:28min:55Seg 14-08-2023
 
 # Aula 02
 
