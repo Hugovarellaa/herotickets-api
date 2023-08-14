@@ -4,7 +4,7 @@ export async function connect() {
   try {
     await mongoose
       .connect(
-        "mongodb+srv://hugovarellaa:mega9851@cluster0.zghrdge.mongodb.net/"
+        "mongodb+srv://hugovarella:mega9851@cluster0.zghrdge.mongodb.net/"
       )
       .then(() => console.log("Database connection established"));
   } catch (error) {
