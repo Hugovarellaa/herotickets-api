@@ -1,5 +1,6 @@
 import express, { Application } from "express";
 import { connect } from "./infra/database";
+import { errorMiddleware } from "./middlewares/error.middleware";
 
 const PORT = 3333;
 
@@ -19,7 +20,7 @@ class App {
   }
 
   interceptError() {
-    // this.app.use()
+    this.app.use(errorMiddleware);
   }
 
   middlewaresInitialized() {
